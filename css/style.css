@@ -13,6 +13,9 @@ ul {
   list-style: none;
 }
 
+section {
+  margin-bottom: 40px;
+}
 
 /* HEADER */
 
@@ -34,7 +37,7 @@ ul.navbar-menu li a,
 ul.navbar-language li a {
   color: #343434;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
 }
 
@@ -153,3 +156,96 @@ section#mobility .container .row .mob-text div {
   }
 }
 /* /TERZA SECTION MOBILITY */
+
+
+/* QUARTA SEZIONE APP */
+
+section#app {
+  color: white;
+}
+
+section#app a {
+  color: white;
+}
+
+
+
+section#app .row {
+  height: 100%;
+}
+
+
+section#app .row .app-box:first-child {
+  margin-right: 40px;
+}
+
+
+section#app .row .app-box {
+  width: calc((100% - 40px) / 2);
+}
+
+
+
+section#app .container .row .app-box:first-child {
+  background-color: #384a5a;
+  padding-bottom: 0;
+}
+
+.app-box div :not(.fs-30) {
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.fs-30 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+/* per ritagliare l'immagine dentro il box, era troppo lunga */
+.cropper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* per ingrandire l'immagine ritagliata */
+section#app img {
+  width: 80%;
+}
+
+
+.city {
+  background-image: url("../img/city.7c8c928.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+
+
+/* WARNING:  WARNING:  WARNING:  */
+/* PER ADESSO NON SONO RIUSCITO AD ALLINEARE LA SECONDA COLONNA CON LA PRIMA, QUESTA E' UNA SOLUZIONE SCORRETTA MA PROVVISORIA */
+.city img {
+  display: none;
+}
+/* WARNING WARNING WARNING */
+
+
+@media screen and (min-width:768px) and (max-width:1270px) {
+
+  section#app .row .app-box:first-child {
+    margin-left: 20px;
+  }
+
+  section#app .row .app-box:last-child {
+    margin-right: 20px;
+  }
+
+  section#app .row .app-box {
+    width: calc((100% - 80px) / 2);
+  }
+
+
+}
+
+
+/* /QUARTA SEZIONE APP */

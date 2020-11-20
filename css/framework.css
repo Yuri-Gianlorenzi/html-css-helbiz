@@ -7,12 +7,12 @@
 
 .debug .row {
   height: 150px;
-  /* line-height: 150px; */
+  line-height: 150px;
 }
 
 .debug .row [class*="col-"] {
   height: 100%;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .debug .row .row [class*="col-"] {
@@ -24,7 +24,7 @@
   padding: 5px;
 }
 
-/* framework */
+/* REGOLE GENERALI */
 
 *{
   margin: 0;
@@ -37,11 +37,31 @@
   margin: 0 auto;
 }
 
+
+
+/* FLOAT E CLEARFIX */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .row::after{
   content: '';
   display: table;
   clear: both;
 }
+
+
+/* BOTTONI */
 
 .row {
   /* height: 150px;
@@ -51,8 +71,8 @@
 .row [class*="col-"] {
   float: left;
   height: 100%;
-  /* text-align: center; */
-  /* background-color: pink;
+  /* text-align: center;
+  background-color: pink;
   border: 1px solid black; */
 }
 
