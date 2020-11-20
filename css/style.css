@@ -1,0 +1,82 @@
+/* REGOLE GENERALI PAGINA */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* HEADER */
+
+/* per dare un'altezza fissa al nostro header-top, non deve variare in base alla grandezza del display */
+.header-top {
+  height: 80px;
+  line-height: 80px;
+}
+
+/* per avere la lista sviluppata in orizzontale e distanziata dal margine destro */
+ul.navbar-menu li,
+ul.navbar-language li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* per aggiungere un grassetto alla lista */
+ul.navbar-menu li a,
+ul.navbar-language li a {
+  color: #343434;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header-top .logo {
+  vertical-align: middle;
+}
+
+/* per creare la linea tra le lingue */
+ul.navbar-language :not(li:last-child) a {
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+/* jumbo */
+.jumbotron {
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron h1 {
+  font-size: 32px;
+}
+
+.jumbotron p {
+  margin: 10px 0;
+}
+
+/* per posizionare al centro dell'immagine il contenitore testo del jumbotron */
+.jumbotron .testo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px){
+  .jumbotron h1 {
+    font-size: 26px;
+  }
+}
