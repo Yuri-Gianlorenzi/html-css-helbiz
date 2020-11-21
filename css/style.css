@@ -180,9 +180,8 @@ section#app .row .app-box:first-child {
 }
 
 
-section#app .row .app-box {
-  width: calc((100% - 40px) / 2);
-}
+
+
 
 
 
@@ -193,7 +192,7 @@ section#app .container .row .app-box:first-child {
 
 .app-box div :not(.fs-30) {
   padding-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fs-30 {
@@ -229,6 +228,16 @@ section#app img {
 }
 /* WARNING WARNING WARNING */
 
+@media screen and (max-width:769px) {
+
+  section#app .row .app-box:first-child {
+    margin-bottom: 40px;
+  }
+
+}
+
+
+
 
 @media screen and (min-width:768px) and (max-width:1270px) {
 
@@ -242,8 +251,27 @@ section#app img {
 
   section#app .row .app-box {
     width: calc((100% - 80px) / 2);
+
   }
 
+}
+
+@media screen and (min-width:1270px) {
+
+  section#app .row .app-box {
+    width: calc((100% - 40px) / 2);
+  }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+  section#app .container {
+    margin: 0 20px;
+  }
 
 }
 
