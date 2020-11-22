@@ -317,3 +317,79 @@ section#family div.row .family-box {
 }
 
 /* /QUINTA SEZIONE */
+
+/* /MAIN */
+
+
+/* FOOTER */
+
+/* footer-top */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 30px 10px;
+}
+
+footer .footer-top a {
+  color: #808080;
+}
+
+/* per abbassare le tre liste senza abbassare il logo */
+footer .footer-top .row div:not(:first-child) {
+  padding: 10px 0;
+
+}
+
+footer .footer-top .row div:not(:first-child) ul li {
+  padding: 10px 0;
+}
+
+footer .footer-top .row div:not(:first-child) ul li h2 a{
+  color: white;
+  text-transform: uppercase;
+}
+
+/* /footer-top */
+
+/* footer-bottom */
+
+.footer-bottom .row {
+  padding: 10px 0;
+}
+
+.footer-bottom ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+/* per aumentare la grandezza delle icone social */
+.footer-bottom .row div:first-child {
+  font-size: 20px;
+}
+
+/* per rimpicciolire il font di tutte le colonne tranne la colonna social */
+.footer-bottom .row div:not(:first-child) {
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+/* per correggere un padding al di sotto dei 992 pixel senza intaccare quando si stà sul display desktop */
+@media screen and (max-width:992px) {
+  .footer-bottom .row div:last-child {
+    padding-top: 10px;
+  }
+}
+
+
+/* per centrare i 2 loghi in fondo al footer */
+.footer-bottom .row:not(:first-child) {
+  text-align: center;
+  padding-top: 30px;
+}
+/* / footer-bottom */
+
+/* /FOOTER */
