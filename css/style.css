@@ -111,6 +111,53 @@ section#prodotti a {
 
 /* /PRIMA SECTION PRODOTTI */
 
+/* SECONDA SECTION STEPS */
+
+section#steps {
+  background-image: url("../img/index-banner.1f6fd0a.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 600px;
+}
+
+section#steps .container {
+  position: relative;
+  height: 100%;
+}
+
+/* per poggiare l'immagine sul fondo del container */
+section#steps .container .row {
+  position: absolute;
+  bottom: 0;
+}
+
+section#steps .container .row div {
+
+}
+section#steps .container div.row > div:first-child {
+
+  padding-top: 25%;
+  text-align: right;
+  font-size: 30px;
+}
+
+section#steps .container div.row > div:last-child {
+  padding-top: 26%;
+  font-size: 20px;
+}
+
+section#steps .container .row div div.steps-phone {
+  text-align: center;
+}
+
+
+section#steps img {
+  width: 60%;
+}
+
+/* /SECONDA SECTION STEPS */
+
 /* TERZA SECTION MOBILITY */
 section#mobility .container .row {
   height: 500px;
