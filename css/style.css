@@ -277,3 +277,43 @@ section#app img {
 
 
 /* /QUARTA SEZIONE APP */
+
+
+/* QUINTA SEZIONE */
+
+section#family {
+  background-image: url('../img/WhatsApp Image 2020-11-20 at 16.52.46.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+section#family h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+section#family ul li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+section#family ul li a {
+  color: black;
+}
+
+section#family div.row .family-box {
+  background-color: white;
+  padding: 50px 80px;
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+
+}
+
+/* /QUINTA SEZIONE */
